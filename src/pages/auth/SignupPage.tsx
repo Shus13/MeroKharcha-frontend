@@ -49,9 +49,9 @@ export default function SignupPage() {
               </label>
               <div className="w-3/4 flex flex-col">
                 <input
-                  type="text"
-                  name=""
-                  id=""
+                  type="tel"
+                  name="phone"
+                  id="phone"
                   className="w-full border border-gray-400 rounded-lg focus:ring-2 focus:ring-teal-600 p-2 outline-none"
                 />
               </div>
@@ -63,9 +63,9 @@ export default function SignupPage() {
               </label>
               <div className="w-3/4 flex flex-col">
                 <input
-                  type="text"
-                  name=""
-                  id=""
+                  type="password"
+                  name="password"
+                  id="password"
                   className="w-full border border-gray-400 rounded-lg focus:ring-2 focus:ring-teal-600 p-2 outline-none"
                 />
               </div>
@@ -101,9 +101,13 @@ export default function SignupPage() {
             </div>
 
             <div className="flex justify-center">
-                <p className="text-sm italic">Already have an account?
-                    <a href="/login" className="text-teal-600 underline"> Login</a>
-                </p>
+              <p className="text-sm italic">
+                Already have an account?
+                <a href="/login" className="text-teal-600 underline">
+                  {" "}
+                  Login
+                </a>
+              </p>
             </div>
           </form>
         </div>
